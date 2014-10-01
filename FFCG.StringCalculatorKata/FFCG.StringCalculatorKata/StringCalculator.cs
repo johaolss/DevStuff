@@ -58,6 +58,12 @@ namespace FFCG.StringCalculatorKata
             ArrangeActAssert(numbers, expected);
         }
 
+        [TestCase("1,2,3,4", 10)]
+        public void Add_UnknownAmountOfNumbers_ReturnSumOfThoseNumbers(string numbers, int expected)
+        {
+            ArrangeActAssert(numbers, expected);
+        }
+
         private static void ArrangeActAssert(string numbers, int expected)
         {
             var calculator = new StringCalculator();
