@@ -16,12 +16,11 @@ namespace FFCG.StringCalculatorKata
             //if numbers is int
                 //return Convert.ToInt32(numbers);
 
-
-
             //int value;
             //if (int.TryParse(numbers, out value))
             //    return Convert.ToInt32(numbers);
 
+            numbers = numbers.Replace('\n', ',');
 
             string[] stringarray = numbers.Split(',');
 
@@ -61,6 +60,12 @@ namespace FFCG.StringCalculatorKata
 
         [TestCase("1,2,3,4", 10)]
         public void Add_UnknownAmountOfNumbers_ReturnSumOfThoseNumbers(string numbers, int expected)
+        {
+            ArrangeActAssert(numbers, expected);
+        }
+
+        [TestCase("1\n2,3,4", 10)]
+        public void Add_BackslashNAsDelimiter_ReturnSumOfNumbers(string numbers, int expected)
         {
             ArrangeActAssert(numbers, expected);
         }
