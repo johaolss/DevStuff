@@ -11,6 +11,14 @@ namespace FFCG.ReverseWords
     {
         public string ReverseWords(string text)
         {
+
+            //string[] wordList = text.Split(' ');
+            //wordList.Reverse();
+
+            //string newSentence = wordList.ToString();
+
+            //return newSentence;
+
             return text;
         }
     }
@@ -19,10 +27,16 @@ namespace FFCG.ReverseWords
     public class WordsReverserTests
     {
         [TestCase("hej", "hej")]
-        public void ReverseOrderOfWords_ReturnTheReversedOrder(string originalOrder, string expected)
+        public void ReverseOrderOfWords_WithOneWord_ReturnTheReversedOrder(string originalOrder, string expected)
         {
             ArrangeActAssert(originalOrder, expected);
         }
+
+        //[TestCase("hej jag", "jag hej")]
+        //public void ReverseOrderOfWords_WithTwoWords_ReturnTheReversedOrder(string originalOrder, string expected)
+        //{
+        //    ArrangeActAssert(originalOrder, expected);
+        //}
         
 
         private static void ArrangeActAssert(string originalOrder, string expected)
