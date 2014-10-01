@@ -1,0 +1,7 @@
+C:\dev\DevStuff\ReverseWords\ReverseWords\obj\Debug\ReverseWords.csprojResolveAssemblyReference.cache
+C:\dev\DevStuff\ReverseWords\ReverseWords\bin\Debug\ReverseWords.dll
+C:\dev\DevStuff\ReverseWords\ReverseWords\bin\Debug\ReverseWords.pdb
+C:\dev\DevStuff\ReverseWords\ReverseWords\bin\Debug\nunit.framework.dll
+C:\dev\DevStuff\ReverseWords\ReverseWords\bin\Debug\nunit.framework.xml
+C:\dev\DevStuff\ReverseWords\ReverseWords\obj\Debug\ReverseWords.dll
+C:\dev\DevStuff\ReverseWords\ReverseWords\obj\Debug\ReverseWords.pdb
