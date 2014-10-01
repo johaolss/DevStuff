@@ -1,0 +1,7 @@
+C:\dev\DevStuff\FFCG.StringCalculatorKata\FFCG.StringCalculatorKata\obj\Debug\FFCG.StringCalculatorKata.csprojResolveAssemblyReference.cache
+C:\dev\DevStuff\FFCG.StringCalculatorKata\FFCG.StringCalculatorKata\bin\Debug\FFCG.StringCalculatorKata.dll
+C:\dev\DevStuff\FFCG.StringCalculatorKata\FFCG.StringCalculatorKata\bin\Debug\FFCG.StringCalculatorKata.pdb
+C:\dev\DevStuff\FFCG.StringCalculatorKata\FFCG.StringCalculatorKata\bin\Debug\nunit.framework.dll
+C:\dev\DevStuff\FFCG.StringCalculatorKata\FFCG.StringCalculatorKata\bin\Debug\nunit.framework.xml
+C:\dev\DevStuff\FFCG.StringCalculatorKata\FFCG.StringCalculatorKata\obj\Debug\FFCG.StringCalculatorKata.dll
+C:\dev\DevStuff\FFCG.StringCalculatorKata\FFCG.StringCalculatorKata\obj\Debug\FFCG.StringCalculatorKata.pdb
