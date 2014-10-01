@@ -13,16 +13,19 @@ namespace FFCG.StringCalculatorKata
         {
             if (numbers == "")
                 return 0;
-            //if numbers is int
-                //return Convert.ToInt32(numbers);
 
-            //int value;
-            //if (int.TryParse(numbers, out value))
-            //    return Convert.ToInt32(numbers);
+            char newDelimiter = ',';
 
-            numbers = numbers.Replace('\n', ',');
+            if (numbers.StartsWith("//"))
+            {
+                newDelimiter = numbers[2];
+                numbers = numbers.Remove(0, 4);
+            }
 
-            string[] stringarray = numbers.Split(',');
+
+            numbers = numbers.Replace('\n', newDelimiter);
+
+            string[] stringarray = numbers.Split(newDelimiter);
 
             int sumOfNumbers = 0;
             foreach (string currentNumber in stringarray)
@@ -43,7 +46,6 @@ namespace FFCG.StringCalculatorKata
             ArrangeActAssert("", 0);
         }
 
-        [TestCase("", 0)]
         [TestCase("1", 1)]
         [TestCase("2", 2)]
         public void Add_WithSingleNumber_ReturnThatNumber(string numbers, int expected)
@@ -66,6 +68,12 @@ namespace FFCG.StringCalculatorKata
 
         [TestCase("1\n2,3,4", 10)]
         public void Add_BackslashNAsDelimiter_ReturnSumOfNumbers(string numbers, int expected)
+        {
+            ArrangeActAssert(numbers, expected);
+        }
+
+        [TestCase("//;\n1;2;3", 6)]
+        public void Add_AnyCharAsDelimiter_ReturnSumOfNumbers(string numbers, int expected)
         {
             ArrangeActAssert(numbers, expected);
         }
