@@ -24,13 +24,14 @@ namespace FFCG.StringCalculatorKata
 
 
             string[] stringarray = numbers.Split(',');
-            if (stringarray.Length==1)
-            {
-                return int.Parse(stringarray[0]);
-            }
-            return int.Parse(stringarray[0]) + int.Parse(stringarray[1]);
 
-            //return 1234;
+            int sumOfNumbers = 0;
+            foreach (string currentNumber in stringarray)
+            {
+                sumOfNumbers += int.Parse(currentNumber);
+            }
+
+            return sumOfNumbers;
 
         }
     }
