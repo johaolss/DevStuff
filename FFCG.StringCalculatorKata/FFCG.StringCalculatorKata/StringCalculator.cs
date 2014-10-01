@@ -22,7 +22,6 @@ namespace FFCG.StringCalculatorKata
                 numbers = numbers.Remove(0, 4);
             }
 
-
             numbers = numbers.Replace('\n', newDelimiter);
 
             string[] stringarray = numbers.Split(newDelimiter);
