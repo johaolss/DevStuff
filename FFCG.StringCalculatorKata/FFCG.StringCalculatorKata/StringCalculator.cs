@@ -13,7 +13,25 @@ namespace FFCG.StringCalculatorKata
         {
             if (numbers == "")
                 return 0;
-            return Convert.ToInt32(numbers);
+            //if numbers is int
+                //return Convert.ToInt32(numbers);
+
+
+
+            //int value;
+            //if (int.TryParse(numbers, out value))
+            //    return Convert.ToInt32(numbers);
+
+
+            string[] stringarray = numbers.Split(',');
+            if (stringarray.Length==1)
+            {
+                return int.Parse(stringarray[0]);
+            }
+            return int.Parse(stringarray[0]) + int.Parse(stringarray[1]);
+
+            //return 1234;
+
         }
     }
     [TestFixture]
@@ -25,9 +43,17 @@ namespace FFCG.StringCalculatorKata
             ArrangeActAssert("", 0);
         }
 
+        [TestCase("", 0)]
         [TestCase("1", 1)]
         [TestCase("2", 2)]
         public void Add_WithSingleNumber_ReturnThatNumber(string numbers, int expected)
+        {
+            ArrangeActAssert(numbers, expected);
+        }
+
+        [TestCase("3,4", 7)]
+        [TestCase("33,4", 37)]
+        public void Add_TwoNumbers_ReturnSumOfThoseNumbers(string numbers, int expected)
         {
             ArrangeActAssert(numbers, expected);
         }
