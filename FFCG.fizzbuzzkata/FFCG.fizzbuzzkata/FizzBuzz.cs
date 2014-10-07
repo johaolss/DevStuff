@@ -74,6 +74,7 @@ namespace FFCG.fizzbuzzkata
             ArrangeActAssert(numbers, expected);
         }
 
+        [TestCase(0, "fizzbuzz")]
         [TestCase(15, "fizzbuzz")]
         public void Test_WithNumberDivisibleBy15_ReturnFizzBuzz(int numbers, string expected)
         {
