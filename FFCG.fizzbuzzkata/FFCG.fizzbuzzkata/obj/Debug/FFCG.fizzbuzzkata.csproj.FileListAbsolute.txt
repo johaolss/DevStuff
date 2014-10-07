@@ -1,0 +1,7 @@
+C:\dev\DevStuff\FFCG.fizzbuzzkata\FFCG.fizzbuzzkata\obj\Debug\FFCG.fizzbuzzkata.csprojResolveAssemblyReference.cache
+C:\dev\DevStuff\FFCG.fizzbuzzkata\FFCG.fizzbuzzkata\bin\Debug\FFCG.fizzbuzzkata.dll
+C:\dev\DevStuff\FFCG.fizzbuzzkata\FFCG.fizzbuzzkata\bin\Debug\FFCG.fizzbuzzkata.pdb
+C:\dev\DevStuff\FFCG.fizzbuzzkata\FFCG.fizzbuzzkata\bin\Debug\nunit.framework.dll
+C:\dev\DevStuff\FFCG.fizzbuzzkata\FFCG.fizzbuzzkata\bin\Debug\nunit.framework.xml
+C:\dev\DevStuff\FFCG.fizzbuzzkata\FFCG.fizzbuzzkata\obj\Debug\FFCG.fizzbuzzkata.dll
+C:\dev\DevStuff\FFCG.fizzbuzzkata\FFCG.fizzbuzzkata\obj\Debug\FFCG.fizzbuzzkata.pdb
