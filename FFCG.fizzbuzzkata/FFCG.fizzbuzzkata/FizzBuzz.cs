@@ -11,24 +11,23 @@ namespace FFCG.fizzbuzzkata
     {
         public string Answer(int i)
         {
-            // throw new NotImplementedException();
+            string result = "";
 
-            if (i %3 == 0 && i %15 != 0)
+            if (i % 3 == 0)
             {
-                return "fizz";
+                result += "fizz";
             }
 
-            if (i % 5 == 0 && i % 15 != 0)
+            if (i % 5 == 0)
             {
-                return "buzz";
+                result += "buzz";
             }
 
-            if (i % 15 == 0)
+            if (result == "")
             {
-                return "fizzbuzz";
+                result += i.ToString();
             }
-
-            return i.ToString();
+            return result;
         }
     }
 
